@@ -1,0 +1,19 @@
+.main{
+	margin-left: 4%;
+	margin-right: 3%;
+}
+#messageList{
+	font-size: 2vmin;
+}
+xmp{
+    font-size: 12px !important;
+}
+
+.back:hover{
+    cursor: pointer;
+}
+/* 移除bootstrap默认样式 */
+.navbar-inverse{
+    background-color: #bae7ff !important;
+    border-color: #bae7ff !important;
+}
