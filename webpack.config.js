@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-17 14:38:40 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-05-25 20:10:39
+ * @Last Modified time: 2019-05-28 07:09:07
  */
 
 const path = require('path')
@@ -44,7 +44,8 @@ const config = {
         'article-write'     : './src/page/article-write/article-write',
         'article-update'    : './src/page/article-update/article-update',
         'article-detail'    : './src/page/article-detail/article-detail',
-        'uni-article-detail': './src/page/uni-article-detail/uni-article-detail'
+        'uni-article-detail': './src/page/uni-article-detail/uni-article-detail',
+        'chat'              : './src/page/chat/chat'
     },
     output: {
         publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '/dist/',
@@ -171,6 +172,7 @@ const config = {
         new HtmlWebpackPlugin(getHtmlConfig('article-update', '编辑文章')),
         new HtmlWebpackPlugin(getHtmlConfig('article-detail', '文章详情')),
         new HtmlWebpackPlugin(getHtmlConfig('uni-article-detail', '文章详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('chat', '聊天室'))
     ]
 }
 
