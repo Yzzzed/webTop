@@ -85,6 +85,7 @@ const header = {
             const username = res.username
             $('.user-con .not-login').hide().siblings('.user-con .login').show()
             .find('#username').text(username)
+            $('.chatRoom-con').removeClass('hide')
         }, errMsg => {
             console.log(errMsg)
         })
